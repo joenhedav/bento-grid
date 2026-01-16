@@ -2,7 +2,7 @@
     --bg-color: #080808;
     --bg-color-card: #171717;
     --extra-color: #282828;
-    --text-primary: #eaeaeae0;
+    --text-primary: #b1b1b1;
     --text-secondary: #b3b3b3;
     --text-muted: #7a7a7a;
     font-size: 16px;
@@ -18,7 +18,7 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: var(--bg-color);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
 
 .container {
@@ -112,6 +112,7 @@ body {
     width: 100%;
     font-size: 1.4rem;
     margin-bottom: 16px;
+    color: var(--text-primary);
 }
 
 .newsletter .input {
@@ -152,11 +153,13 @@ body {
 
 .stack-content>p {
     font-size: 1.4rem;
+    color: var(--text-primary);
 }
 
 .stack-icons {
     display: flex;
     height: 100%;
+    width: 100%;
     align-items: center;
     justify-content: center;
     gap: 16px;
@@ -172,6 +175,152 @@ body {
 
 .stack-icons div img {
     width: 36px;
+    height: auto;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 0;
+}
+
+/* theme */
+.toggle-theme {
+    width: 96px;
+    height: 52px;
+    background-color: var(--extra-color);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.toggle-theme>div {
+    width: 42px;
+    height: 42px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    position: relative;
+}
+
+.toggle-theme>div img {
+    width: 24px;
+    height: auto;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+/* contact */
+.contact-container {
+    width: 70%;
+    height: 55%;
+}
+
+.contact-container>p {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+}
+
+.contact-container>button {
+    width: 100%;
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: var(--extra-color);
+    border: none;
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.contact-container span img {
+    width: 18px;
+    height: auto;
+}
+
+/* about */
+.content-about {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about {
+    color: var(--text-muted);
+    font-size: .9rem;
+    margin: 0;
+}
+
+#icon {
+    width: 42px;
+    height: 42px;
+    margin-left: auto;
+    margin-top: auto;
+    border-radius: 50%;
+    border: 2px solid var(--extra-color);
+    position: relative;
+    cursor: pointer;
+}
+
+#icon img {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+.content-about p {
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    margin-top: 24px;
+}
+
+/* resources */
+.resources-content {
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resources-content p {
+    font-size: 1.4rem;
+}
+
+#resources {
+    font-size: .9rem;
+    margin-bottom: 24px;
+    color: var(--text-muted);
+}
+
+/* social */
+.container>.social {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.social>div {
+    background-color: var(--bg-color-card);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.social img {
+    width: 28px;
     height: auto;
     position: absolute;
     inset: 0;
